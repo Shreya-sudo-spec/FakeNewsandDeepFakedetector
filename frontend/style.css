@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    min-height: 100vh;
+    color: #1f2937;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #6b7280;
+    font-size: 17px;
+}
+
+main {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.mode-buttons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.mode-buttons button {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    background: #e5e7eb;
+}
+
+.mode-buttons button.active {
+    background: #2563eb;
+    color: white;
+}
+
+label {
+    display: block;
+    margin: 18px 0 8px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+textarea {
+    min-height: 220px;
+    resize: vertical;
+}
+
+#analyzeButton {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #111827;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#analyzeButton:hover {
+    opacity: 0.9;
+}
+
+.result {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background: #f3f4f6;
+}
+
+.result h2 {
+    margin-bottom: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+.coming-soon {
+    text-align: center;
+    padding: 50px 20px;
+    color: #6b7280;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+}
+.result {
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    background: #f3f4f6;
+}
+
+.result h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.result p {
+    font-size: 18px;
+    font-weight: bold;
+}

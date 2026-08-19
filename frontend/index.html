@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeriSight AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>🛡️ VeriSight AI</h1>
+            <p>AI-Powered Fake News & Deepfake Detector</p>
+        </header>
+
+        <main>
+
+            <div class="mode-buttons">
+                <button id="newsMode" class="active">📰 Fake News</button>
+                <button id="mediaMode">🎥 Deepfake</button>
+            </div>
+
+            <section id="newsSection">
+
+                <label for="title">News Title</label>
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Enter the news headline..."
+                >
+
+                <label for="article">News Article</label>
+                <textarea
+                    id="article"
+                    placeholder="Paste the full news article here..."
+                ></textarea>
+
+                <button id="analyzeButton">🔍 Analyze Article</button>
+
+                <div id="result" class="result hidden">
+                    <h2 id="prediction"></h2>
+                    <p id="confidence"></p>
+                </div>
+
+            </section>
+
+            <section id="mediaSection" class="hidden">
+
+                <h2>🎥 Deepfake Detection</h2>
+
+                <p class="coming-soon">
+                    Deepfake detection will be available here soon.
+                </p>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <p>TruthGuard AI • AI-assisted content verification</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
